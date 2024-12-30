@@ -6,9 +6,48 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AACFBA042D2363F10010D81A /* SampleDeviceActivityReport.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = AACFB9F82D2363F10010D81A /* SampleDeviceActivityReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AACFBA022D2363F10010D81A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AACFB9712D2361440010D81A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AACFB9F72D2363F10010D81A;
+			remoteInfo = SampleDeviceActivityReport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AACFBA052D2363F10010D81A /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				AACFBA042D2363F10010D81A /* SampleDeviceActivityReport.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AACFB9792D2361440010D81A /* DeviceActivityReportFeedback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceActivityReportFeedback.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AACFB9F82D2363F10010D81A /* SampleDeviceActivityReport.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = SampleDeviceActivityReport.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AACFBA082D2363F10010D81A /* Exceptions for "SampleDeviceActivityReport" folder in "SampleDeviceActivityReport" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AACFB9F72D2363F10010D81A /* SampleDeviceActivityReport */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AACFB97B2D2361440010D81A /* DeviceActivityReportFeedback */ = {
@@ -16,10 +55,25 @@
 			path = DeviceActivityReportFeedback;
 			sourceTree = "<group>";
 		};
+		AACFB9F92D2363F10010D81A /* SampleDeviceActivityReport */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AACFBA082D2363F10010D81A /* Exceptions for "SampleDeviceActivityReport" folder in "SampleDeviceActivityReport" target */,
+			);
+			path = SampleDeviceActivityReport;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AACFB9762D2361440010D81A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AACFB9F52D2363F10010D81A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				AACFB97B2D2361440010D81A /* DeviceActivityReportFeedback */,
+				AACFB9F92D2363F10010D81A /* SampleDeviceActivityReport */,
 				AACFB97A2D2361440010D81A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				AACFB9792D2361440010D81A /* DeviceActivityReportFeedback.app */,
+				AACFB9F82D2363F10010D81A /* SampleDeviceActivityReport.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +111,12 @@
 				AACFB9752D2361440010D81A /* Sources */,
 				AACFB9762D2361440010D81A /* Frameworks */,
 				AACFB9772D2361440010D81A /* Resources */,
+				AACFBA052D2363F10010D81A /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AACFBA032D2363F10010D81A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				AACFB97B2D2361440010D81A /* DeviceActivityReportFeedback */,
@@ -69,6 +127,28 @@
 			productName = DeviceActivityReportFeedback;
 			productReference = AACFB9792D2361440010D81A /* DeviceActivityReportFeedback.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AACFB9F72D2363F10010D81A /* SampleDeviceActivityReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AACFBA092D2363F10010D81A /* Build configuration list for PBXNativeTarget "SampleDeviceActivityReport" */;
+			buildPhases = (
+				AACFB9F42D2363F10010D81A /* Sources */,
+				AACFB9F52D2363F10010D81A /* Frameworks */,
+				AACFB9F62D2363F10010D81A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AACFB9F92D2363F10010D81A /* SampleDeviceActivityReport */,
+			);
+			name = SampleDeviceActivityReport;
+			packageProductDependencies = (
+			);
+			productName = SampleDeviceActivityReport;
+			productReference = AACFB9F82D2363F10010D81A /* SampleDeviceActivityReport.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +161,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					AACFB9782D2361440010D81A = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					AACFB9F72D2363F10010D81A = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -100,12 +183,20 @@
 			projectRoot = "";
 			targets = (
 				AACFB9782D2361440010D81A /* DeviceActivityReportFeedback */,
+				AACFB9F72D2363F10010D81A /* SampleDeviceActivityReport */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AACFB9772D2361440010D81A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AACFB9F62D2363F10010D81A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +213,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AACFB9F42D2363F10010D81A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AACFBA032D2363F10010D81A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AACFB9F72D2363F10010D81A /* SampleDeviceActivityReport */;
+			targetProxy = AACFBA022D2363F10010D81A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AACFB99B2D2361450010D81A /* Debug */ = {
@@ -304,6 +410,58 @@
 			};
 			name = Release;
 		};
+		AACFBA062D2363F10010D81A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SampleDeviceActivityReport/SampleDeviceActivityReport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626456KFJ5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleDeviceActivityReport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SampleDeviceActivityReport;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtful.ThoughtfulAlpha.DeviceActivityReportFeedback.SampleDeviceActivityReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AACFBA072D2363F10010D81A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SampleDeviceActivityReport/SampleDeviceActivityReport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 626456KFJ5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleDeviceActivityReport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SampleDeviceActivityReport;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtful.ThoughtfulAlpha.DeviceActivityReportFeedback.SampleDeviceActivityReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -321,6 +479,15 @@
 			buildConfigurations = (
 				AACFB99E2D2361450010D81A /* Debug */,
 				AACFB99F2D2361450010D81A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AACFBA092D2363F10010D81A /* Build configuration list for PBXNativeTarget "SampleDeviceActivityReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AACFBA062D2363F10010D81A /* Debug */,
+				AACFBA072D2363F10010D81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
