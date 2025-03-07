@@ -57,7 +57,7 @@ struct ScreenTimeReportView: View {
     
     public var body: some View {
         VStack {
-            Text("Below, you should expect to see the total activity for the past week. However, it is note usually rendered the first time you load this view.\n\nIf it is not visible, navigate to the Home View and back to this view a few times until the DeviceActivityReport view appears. Once it appears, you've successfully reproduced the issue: the DeviceActivityReport view does not render, until after it's been added to the view hierarchy repeatedly.")
+            Text("Below, you should expect to see the total activity for the past week. However, it is not usually rendered the first time you load this view.\n\nIf it is not visible, navigate to the Home View and back to this view a few times until the DeviceActivityReport view appears. Once it appears, you've successfully reproduced the issue: the DeviceActivityReport view does not render, until after it's been added to the view hierarchy repeatedly.")
             
             DeviceActivityReport(
                 context,
